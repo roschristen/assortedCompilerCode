@@ -1,9 +1,9 @@
 #include "ast_library.h"
 #include <stdio.h>
 #include <stdlib.h>
-#This is incomplete code from ast_library.c, the part of our compiler that held the declarations for the different type creation functions to build the ast. 
-#It is based on code and guidance from Introduction to Compilers and Language Design by Professor Douglas Thain. It is intentionally incomplete so that the
-#solutions are not available to current students in cs230.
+//This is incomplete code from ast_library.c, the part of our compiler that held the declarations for the different type creation functions to build the ast. 
+//It is based on code and guidance from Introduction to Compilers and Language Design by Professor Douglas Thain. It is intentionally incomplete so that the
+//solutions are not available to current students in cs230.
 
 /* Create a declaration */
 struct decl * decl_create(char *name, struct type *type, struct expr *value, struct stmt *code, struct decl *next) {
@@ -66,14 +66,6 @@ struct expr *bool_lit_create(int val) {
       t->kind = EXPR_BOOLEAN_LITERAL;
   return t;
 }
-
-/* Function to create a character literal */
-struct expr *char_lit_create(char* val) {
-  struct expr *t = malloc(sizeof(*t));
-  if (!t) {
-    yyerror("out of space: type");
-    exit(0);
-  }
 
 //set all of the fields of the expression struct to the corresponding parameter values
    t->intVal = *(val+1);//put the character in intVal(val points to the first quote mark, so it needs to be val+1)
