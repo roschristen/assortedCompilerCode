@@ -1,7 +1,7 @@
 #include "ast_library.h"
 #include <stdio.h>
 #include <stdlib.h>
-//This is incomplete code from ast_library.c, the part of our compiler that held the declarations for the different type creation functions to build the ast. 
+//This is incomplete code from ast_library.c, the part of our compiler that held the declarations for the different type creation functions to build the abstract syntax tree. 
 //It is based on code and guidance from Introduction to Compilers and Language Design by Professor Douglas Thain. It is intentionally incomplete so that the
 //solutions are not available to current students in cs230.
 
